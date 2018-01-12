@@ -17,6 +17,8 @@
 
          /*eslint-disable */
 
+       window.zESettings = zendeskWidgetSettings.settings;
+
        window.zEmbed || function(e, t) {
          var n, o, d, i, s, a = [],
            r = document.createElement("iframe");

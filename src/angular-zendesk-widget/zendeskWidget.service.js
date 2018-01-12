@@ -2,6 +2,7 @@
   var
     settings = {
       accountUrl: '',
+      settings: {},
       beforePageLoad: angular.noop
     },
     apiMethods = [

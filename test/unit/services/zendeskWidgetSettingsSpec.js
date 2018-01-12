@@ -13,6 +13,10 @@ describe('zendeskWidgetSettings', function() {
       expect(subject['accountUrl']).toEqual('');
     });
 
+    it('has a blank `settings`', function() {
+      expect(subject['settings']).toEqual({});
+    });
+
     it('does a no-op on `beforePageLoad`', function() {
       expect(subject['beforePageLoad']).toEqual(angular.noop);
     });

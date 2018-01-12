@@ -8,6 +8,7 @@
   var
     settings = {
       accountUrl: '',
+      settings: {},
       beforePageLoad: angular.noop
     },
     apiMethods = [
@@ -81,6 +82,8 @@
        // https://support.zendesk.com/hc/en-us/articles/203908456-Using-Web-Widget-to-embed-customer-service-in-your-website
 
          /*eslint-disable */
+
+       window.zESettings = zendeskWidgetSettings.settings;
 
        window.zEmbed || function(e, t) {
          var n, o, d, i, s, a = [],
